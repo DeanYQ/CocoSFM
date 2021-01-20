@@ -1,0 +1,3 @@
+﻿Stop 
+$ git config --global core.pager cat
+https://stackoverflow.com/questions/9483757/how-to-exit-git-log-or-git-diff#:~:text=You're%20in%20the%20less,to%20cat%20or%20set%20core.
