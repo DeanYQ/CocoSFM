@@ -35,8 +35,14 @@ namespace GitSheller
         {
         }
 
+        public string GetStatus(string projectPath)
+        {
+            return Run($@"--git-dir={projectPath}\.git --work-tree={projectPath} status");
+        }
+
         public string GetFileLog(string projectPath, string filePath)
         {
+
             return Run($@"--git-dir={projectPath}\.git log -- {filePath}");
         }
 

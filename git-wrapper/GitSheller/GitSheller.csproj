@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GitActionResult.cs" />
-    <Compile Include="GitFormatter.cs" />
+    <Compile Include="GitMessageParser.cs" />
     <Compile Include="GitHistoryItem.cs" />
     <Compile Include="GitProxy.cs" />
     <Compile Include="ProjectSourceManager.cs" />

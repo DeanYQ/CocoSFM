@@ -1,0 +1,9 @@
+E:\_github\CocoSFM\update\CocoSFM\git-wrapper\GitConsole\bin\Debug\GitConsole.exe.config
+E:\_github\CocoSFM\update\CocoSFM\git-wrapper\GitConsole\bin\Debug\GitConsole.exe
+E:\_github\CocoSFM\update\CocoSFM\git-wrapper\GitConsole\bin\Debug\GitConsole.pdb
+E:\_github\CocoSFM\update\CocoSFM\git-wrapper\GitConsole\bin\Debug\GitSheller.dll
+E:\_github\CocoSFM\update\CocoSFM\git-wrapper\GitConsole\bin\Debug\GitSheller.pdb
+E:\_github\CocoSFM\update\CocoSFM\git-wrapper\GitConsole\obj\Debug\GitConsole.csprojAssemblyReference.cache
+E:\_github\CocoSFM\update\CocoSFM\git-wrapper\GitConsole\obj\Debug\GitConsole.csproj.CopyComplete
+E:\_github\CocoSFM\update\CocoSFM\git-wrapper\GitConsole\obj\Debug\GitConsole.exe
+E:\_github\CocoSFM\update\CocoSFM\git-wrapper\GitConsole\obj\Debug\GitConsole.pdb

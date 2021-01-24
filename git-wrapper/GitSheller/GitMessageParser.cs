@@ -1,13 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace GitSheller
 {
-    public class GitFormatter
+    public class GitMessageParser
     {
         public static List<GitHistoryItem> FormatHistory(string history)
         {
@@ -44,6 +40,20 @@ namespace GitSheller
             }
             item.Message = item.Message.Trim();
             return histories;
+        }
+
+        public static bool ParseStatus(string message)
+        {
+            if (string.IsNullOrWhiteSpace(message))
+                return true;
+
+            var lines = message.Split(new string[] { Environment.NewLine, "\r", "\n" }, StringSplitOptions.None);
+            foreach (var line in lines)
+            {
+                if (line.Contains("nothing to commit"))
+                    return true;
+            }
+            return false;
         }
     }
 }

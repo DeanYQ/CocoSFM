@@ -20,13 +20,26 @@ namespace GitSheller
             proxy = new GitProxy(git); 
         }
 
-        public GitActionResult Commit()
+        public void Compare()
+        {
+
+        }
+
+        public void ViewFile()
+        {
+
+        }
+
+        public GitActionResult CommitChange(string comments)
         {
             try
             {
                 CheckGit();
-                var log = proxy.Commit(project);
-                return new GitActionResult(true, log);
+                var msg = proxy.Add(project);
+                Console.WriteLine(msg);
+                msg = proxy.Commit(project, comments);
+                Console.WriteLine(msg);
+                return new GitActionResult(true, msg);
             }
             catch (Exception ex)
             {
@@ -39,7 +52,7 @@ namespace GitSheller
 
         }
 
-        public GitActionResult GetFileLog(string project, string filePath)
+        public GitActionResult GetFileLog(string filePath)
         {
             try
             {
@@ -69,9 +82,27 @@ namespace GitSheller
 
         protected void CheckGit()
         {
-            if (!Directory.Exists(".git"))
+            if (!Directory.Exists(Path.Combine(project, ".git")))
             {
                 proxy.Init();
+            }
+        }
+
+        /// <summary>
+        /// If there is change, return false
+        /// </summary>
+        /// <returns></returns>
+        public bool CheckStatus()
+        {
+            try
+            {
+                CheckGit();
+                var log = proxy.GetStatus(project);
+                return GitMessageParser.ParseStatus(log);
+            }
+            catch
+            {
+                return true;
             }
         }
     }

@@ -1,0 +1,5 @@
+E:\_github\CocoSFM\update\CocoSFM\git-wrapper\GitSheller\bin\Debug\GitSheller.dll
+E:\_github\CocoSFM\update\CocoSFM\git-wrapper\GitSheller\bin\Debug\GitSheller.pdb
+E:\_github\CocoSFM\update\CocoSFM\git-wrapper\GitSheller\obj\Debug\GitSheller.csprojAssemblyReference.cache
+E:\_github\CocoSFM\update\CocoSFM\git-wrapper\GitSheller\obj\Debug\GitSheller.dll
+E:\_github\CocoSFM\update\CocoSFM\git-wrapper\GitSheller\obj\Debug\GitSheller.pdb

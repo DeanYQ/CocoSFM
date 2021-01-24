@@ -11,9 +11,8 @@ namespace GitConsole
     {
         static void Main(string[] args)
         {
-            var sfc = new ProjectSourceManager(@"C:\me\gits\ConfigMate", @"C:\Program Files\Git\bin\git.exe");
-            var log = sfc.GetProjectLog();
-            GitFormatter.FormatHistory(log.Message);
+            var sfc = new ProjectSourceManager(@"E:\_github\Raspberry-Initial", @"C:\Program Files\Git\bin\git.exe");
+            var state = sfc.CheckStatus();
             // var log = sfc.Commit();
 
             Console.Read();
